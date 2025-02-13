@@ -1,0 +1,27 @@
+
+
+   .mainc {
+  position: absolute; /* Absolute position to center the div */
+  top: 70%; /* Move the div down by 50% of the viewport height */
+  left: 50%; /* Move the div right by 50% of the viewport width */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center the div */
+  z-index: 1;
+  color: white; /* Make the text color visible */
+  font-size: 1.3rem;
+  padding: 20px;
+  text-align: center; /* Ensure the text inside the div is centered */
+  width:90%;
+}
+
+.heartcvs {
+    position: absolute;
+
+    bottom: -30%;
+}
+@media (min-width: 768px) {
+    .heartcvs {
+        position: absolute;
+        right: -20%;
+        top: 10%;
+    }
+}

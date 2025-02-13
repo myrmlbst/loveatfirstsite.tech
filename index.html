@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/flowers.png" type="image/x-icon">
+        <link rel="script" href="main.js">
+        <title>Love at First Site</title>
+    </head>
+    <body>
+        <div class="greetings">
+            <span>T</span>
+            <span>O</span>
+            <span>&nbsp</span>
+            <span>M</span>
+            <span>Y</span>
+            <span>&nbsp</span>
+            <br>
+            <span>F</span>
+            <span>A</span>
+            <span>V</span>
+            <span>O</span>
+            <span>U</span>
+            <span>R</span>
+            <span>I</span>
+            <span>T</span>
+            <span>E</span>
+        </div>
+
+        <div class="description">
+            <span> I want to wish you a happy valentine's day </span>
+        </div>
+
+        <div class="bttn">
+    <span> So what way to do it better than this </span>
+    <button>
+        <a href="heart.html" id="dynamicLink">Press Here</a>
+    </button>
+</div>
+
+        <script>
+
+// Define dynamic parameters
+
+// Get the current URL's query string
+const urlParams = new URLSearchParams(window.location.search);
+const loversIndex = urlParams.has('lovers') ? urlParams.get('lovers') : null; // Get 'lovers' as a string
+
+
+// Create the query string
+let queryString = `?lovers=${loversIndex}`;
+
+// Get the link element and update its href
+let link = document.getElementById('dynamicLink');
+link.href = 'heart.html' + queryString;
+
+        </script>
+    </body>
+</html>
